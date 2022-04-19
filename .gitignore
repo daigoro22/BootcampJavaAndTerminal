@@ -1,2 +1,5 @@
 *.csv
 programming/table_to_csv/
+*.class
+*.swp
+*.txt
