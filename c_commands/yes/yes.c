@@ -3,11 +3,12 @@
 #include"../catarg/catarg.h"
 
 int main(int argc, char *argv[]){
-  char *printStr = malloc(1);
+  char *printStr = NULL;
   if(argc<2){
     printStr = "y";
+  }else{
+    concatArgv(argc-1,argv+1,&printStr);
   }
-  concatArgv(argc,argv,printStr);
 
   while(1)
     puts(printStr);
